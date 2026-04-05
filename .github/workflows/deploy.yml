@@ -20,6 +20,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/ubuntu/backend-deploy-project-live-testing
+            cd /home/ubuntu/backend_application_deploy_github_action
             sudo git pull
             sudo docker compose up -d --build
